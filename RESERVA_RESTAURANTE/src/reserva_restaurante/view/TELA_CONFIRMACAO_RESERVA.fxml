@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="516.0" style="-fx-border-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reserva_restaurante.TELA_CONFIRMACAO_RESERVAController">
+    <children>
+        <Button fx:id="Bttn_Excluir_Tela2" layoutX="442.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleExcluir" style="-fx-border-color: black; -fx-background-color: fc1313;" text="Excluir" textFill="WHITE" />
+        <Button fx:id="Bttn_Confirmar_Tela2" layoutX="361.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleConfirmar" style="-fx-border-color: black;" text="Confirmar" />
+        <ChoiceBox fx:id="Horario_Tela2" layoutX="326.0" layoutY="97.0" prefHeight="27.0" prefWidth="163.0" style="-fx-border-color: black;" />
+        <Text layoutX="326.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário" wrappingWidth="56.13671875">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <Text layoutX="128.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="41.13671875">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Text>
+        <DatePicker fx:id="Data_Tela2" layoutX="128.0" layoutY="97.0" style="-fx-border-color: black;" />
+        <Text layoutX="171.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RESERVAS" wrappingWidth="183.13671875">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tableViewReservas" layoutX="42.0" layoutY="136.0" prefHeight="189.0" prefWidth="449.0">
+            <columns>
+                <TableColumn fx:id="colSelecionar" text="Selecionar" />
+                <TableColumn fx:id="colTitulo" text="Título" />
+                <TableColumn fx:id="colNome" text="Nome" />
+                <TableColumn fx:id="colHorario" text="Horário" />
+                <TableColumn fx:id="colData" text="Data" />
+                <TableColumn fx:id="colNumPessoas" text="Núm. de Pessoas" />
+                <TableColumn fx:id="colTelefone" text="Telefone" />
+                <TableColumn fx:id="colEmail" text="Email" />
+                <TableColumn fx:id="colComentario" text="Coomentário" />
+            </columns>
+        </TableView>
+        <Button fx:id="Bttn_Voltar_tela2" layoutX="33.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleVoltar" style="-fx-border-color: black;" text="Voltar" />
+        <Button fx:id="Bttn_Pesquisar_tela2" layoutX="42.0" layoutY="98.0" mnemonicParsing="false" style="-fx-border-color: black;" text="Pesquisar" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="517.0" prefWidth="492.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reserva_restaurante.TELA_CADASTRO_RESERVAController">
+   <children>
+      <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="493.0" style="-fx-border-color: black;">
+         <children>
+            <CheckBox fx:id="BoxTick_Novidades" layoutX="27.0" layoutY="429.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="359.0" text="Gostaria de receber novidades via Email">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </CheckBox>
+            <Text layoutX="24.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Título" wrappingWidth="44.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TextField_NumP" layoutX="24.0" layoutY="259.0" prefHeight="27.0" prefWidth="119.0" style="-fx-border-color: black;" />
+            <Text layoutX="166.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" wrappingWidth="30.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <DatePicker fx:id="DatePicker_tela1" layoutX="167.0" layoutY="259.0" prefHeight="27.0" prefWidth="150.0" style="-fx-border-color: black;" />
+            <ChoiceBox fx:id="ChoiceBox_Horario" layoutX="333.0" layoutY="259.0" prefWidth="150.0" style="-fx-border-color: black;" />
+            <Text layoutX="333.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Horário" wrappingWidth="52.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="Box_Comentario" layoutX="27.0" layoutY="311.0" prefHeight="104.0" prefWidth="453.0" style="-fx-border-color: black;" />
+            <Text layoutX="24.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="134.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TextField_Email" layoutX="24.0" layoutY="207.0" prefHeight="27.0" prefWidth="459.0" style="-fx-border-color: black;" />
+            <Text layoutX="24.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentários" wrappingWidth="134.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TextField_DDD" layoutX="24.0" layoutY="151.0" prefHeight="17.0" prefWidth="52.0" style="-fx-border-color: black;" />
+            <Text layoutX="27.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DDD" wrappingWidth="37.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TextField_Telefone" layoutX="113.0" layoutY="151.0" prefHeight="25.0" prefWidth="370.0" style="-fx-border-color: black;" />
+            <Text layoutX="114.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefone" wrappingWidth="134.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <TextField fx:id="TextField_Nome" layoutX="113.0" layoutY="96.0" prefHeight="25.0" prefWidth="370.0" style="-fx-border-color: black;" />
+            <Text layoutX="24.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Número de pessoas" wrappingWidth="118.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="113.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome" wrappingWidth="37.619140625">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="80.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cadastro de Reservas" wrappingWidth="344.13671875">
+               <font>
+                  <Font name="Calibri" size="39.0" />
+               </font>
+            </Text>
+            <Button fx:id="Bttn_Cancelar" layoutX="413.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleCancelar" style="-fx-border-color: Black; -fx-background-color: fc1313;" text="Cancelar" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Bttn_Reservar" layoutX="341.0" layoutY="477.0" mnemonicParsing="false" onAction="#handleReservar" style="-fx-background-color: #37e10e; -fx-border-color: Black;" text="Reservar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="Bttn_Confirmar" layoutX="27.0" layoutY="481.0" mnemonicParsing="false" onAction="#handleConfirmar" style="-fx-border-color: black;" text="Confirmar Reservas" />
+            <Text fill="RED" layoutX="59.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="156.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="56.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="167.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="56.0" layoutY="202.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="140.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="193.0" layoutY="251.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="382.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <ChoiceBox fx:id="ChoiceBox_Titulo" layoutX="24.0" layoutY="96.0" prefHeight="27.0" prefWidth="58.0" style="-fx-border-color: black;" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
